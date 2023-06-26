@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Accueil">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/SpinnerCategorie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/EditTextRecherche"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:inputType="text"
+            android:hint="@string/placeholderEditTextRecherche"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/ButtonRecherche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textButtonRecherche"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listeView" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:id="@+id/progressBar"/>
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LeBonCoup</string>
+    <string name="connexionLeBonCoup">Connexion LeBonCoup</string>
+    <string name="textLogin">Adresse Email :</string>
+    <string name="textPassword">Password :</string>
+    <string name="textButtonConnexion">Se connecter</string>
+    <string name="placeholderEditTextRecherche">Votre recherche ici</string>
+    <string name="textButtonRecherche">Rechercher</string>
+
+</resources>

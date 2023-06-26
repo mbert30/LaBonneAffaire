@@ -1,0 +1,40 @@
+{
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "express-jwt": "^8.3.0",
+    "express-jwt-permissions": "^1.3.7",
+    "express-validator": "^6.14.3",
+    "luxon": "^3.2.1",
+    "mysql2": "^3.0.1",
+    "sequelize": "^6.28.0",
+    "sequelize-auto": "^0.8.8",
+    "sqlite3": "^5.1.4",
+    "uuid": "^9.0.0"
+  },
+  "name": "projetesimed2022",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "start:dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbert30/projet2023Esimed.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mbert30/projet2023Esimed/issues"
+  },
+  "homepage": "https://github.com/mbert30/projet2023Esimed#readme",
+  "description": ""
+}

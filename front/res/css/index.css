@@ -1,0 +1,184 @@
+/* navbar */
+.logoNavBar {
+    height: 70px;
+}
+
+.navbar-deco {
+    display: flex;
+}
+
+.navbar {
+
+}
+
+/* Accueil */
+
+.div-Principal-Accueil {
+    display: flex;
+    flex-direction: column;
+}
+
+.div-TextIntro {
+    padding: 5px;
+}
+
+.TextIntro {
+    text-align: center;
+}
+
+.div-derniereAnnonce {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 100%;
+}
+
+.div-AnnonceAccueil {
+    padding: 5px;
+    margin: 10px;
+    border: solid 1px;  
+    border-color: black;
+    display: flex;
+    justify-content: center;
+    width: 40%;
+}
+
+.div-AnnonceAccueil-image {
+    display: flex;
+    padding: 2px;
+}
+
+.div-AnnonceAccueil-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2px;
+}
+
+.AnnonceAccueil-image {
+    height: 90px;
+}
+
+/* InfoCompte */
+
+.p-Bienvenue {
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.p-InfoCompte {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.div-ListeInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.div-nom, .div-prenom, .div-email, .div-adressePostal, .div-complementAdresse, .div-Ntel {
+    display: flex;
+    padding: 10px;
+}
+
+.div_buttonInfoCompte {
+    display: flex;
+    padding: 10px;
+}
+
+/* ListeAnnonce */
+
+.div-navbarAnnonce {
+    display: flex;
+    flex-direction: column; 
+}
+
+.div-RechercheAnnonce {
+    display: flex;
+    flex-direction: row;
+}
+
+.div-RechercheAnnonce {
+    padding: 5px;
+    padding-bottom: 15px;   
+}
+
+.div-Creation {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.div-ou {
+    text-align: center;
+}
+
+.AnnonceBoutton {
+    border: none;
+    width: 90%;
+}
+
+.Annonce {
+    border: solid 1px;  
+    border-color: black;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.Annonce-image {
+    width: 100px;
+}
+
+.div-Annonce-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2px;
+}
+.div-ListeAnnonce {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+/* Création Annonce */
+
+.div-Principal-NouvelleAnnonce {
+    display: flex;
+    flex-direction: column;
+}
+
+.p-Titre {
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.div-libelleAnnonce, .div-descriptionAnnonce, .div-prix, .div-PossibleNego, .div-ID_Categorie {
+    display: flex;
+    padding: 10px;
+}
+
+.div_buttonNouvelleAnnonce {
+    display: flex;
+    align-items: baseline;
+}
+
+#descriptionAnnonce {
+    width: 50%;
+    height: 70px;
+}
+
+#PossibleNego {
+    width: 20%;
+    
+}
+
+/* Annonce */
+
+.Annonce-image {
+    height: 90px;
+}
