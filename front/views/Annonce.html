@@ -10,8 +10,8 @@
         <link rel="stylesheet" type="text/css" href="../res/css/index.css"/>
     </head>
     <body>
-        <div id="navbar">
-        </div>
+        <nav class="nav-navPrincipal" id="navbar">
+        </nav>
         <script type="module">
             import NavbarController from '../app/controllers/navbar.js'
             window.navbarController = new NavbarController()
@@ -45,7 +45,7 @@
                 <label for="messageAnnonce"> ------------------- Laisser un message au vendeur ------------------- </label>
                 <div class="div-RechercheAnnonce">
                     <textarea name="messageAnnonce" id="messageAnnonce" cols="100" rows="2"></textarea>
-                    <button class="btn btn-outline-success" onclick="annonceController.evoyerMessage()">Envoyer</button>
+                    <button class="btn btn-outline-success" onclick="annonceController.envoyerMessage()">Envoyer</button>
                 </div>
             </div>
             <div>

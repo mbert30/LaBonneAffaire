@@ -46,7 +46,7 @@ class AnnonceController extends BaseController {
         this.PossibleNego.innerHTML = PossibleNegos
         this.ID_Categorie.innerHTML = retour[0].ID_Categorie
     }
-    async evoyerMessage()
+    async envoyerMessage()
     {
         if(messageAnnonce.value == '')
         {

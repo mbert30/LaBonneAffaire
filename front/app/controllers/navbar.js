@@ -2,34 +2,49 @@ import BaseController from './basecontroller.js'
 class NavbarController extends BaseController {
     constructor() {
         super()
-        document.getElementById('navbar').innerHTML = 
-        `<nav class="navbar navbar-expand-lg navbar-light bg-light"> 
-            <div class="container-fluid"> 
-                <a class="navbar-brand" href="Accueil.html"><img src="../res/logo.png" alt="logo.png" class="logoNavBar"></a> 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="Accueil.html">Accueil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="ListeAnnonce.html">Liste des Annonces</a>
-                        </li>
-                        <div id="navbar-deco" class="navbar-deco">
-                        </div>
-                    </ul>
-                </div>
+        this.ouvert = false
+        document.getElementById('navbar').innerHTML = `
+        <div class="div-navPrincipal"> 
+            <a class="" href="Accueil.html"><img src="../res/logo.png" alt="logo.png" class="img-logoNavBar"></a>
+            <ul class="ul-navbar" id="ul-navbar">
+                <li class="li-navItem">
+                    <a class="a-navLink" href="Accueil.html">Accueil</a>
+                </li>
+                <li class="li-navItem">
+                    <a class="a-navLink" href="ListeAnnonce.html">Liste des annonces </a>
+                </li>
+                <li class="li-navItem">
+                    <a class="a-navLink" href="NouvelleAnnonce.html"> Créer sa propre annonce </a>
+                </li>
+                <li class="li-navItem" id="navbar-co">
+                    
+                </li>
+                <li class="li-navItem" id="navbar-deco">
+                    
+                </li>
+            </ul>
+            <div class="icon">
+                <button class="toggle" onclick="
+                    if(!navbarController.ouvert){ 
+                        document.getElementById('ul-navbar').style = 'display: unset;'; 
+                        navbarController.ouvert = true;
+                    } 
+                    else { 
+                        document.getElementById('ul-navbar').style = ''
+                        navbarController.ouvert = false;
+                    }
+                ">☰</button>
             </div>
-        </nav>`
+        </div>`
     }
     changementNavbar()
     {
         if(sessionStorage.getItem("token") == null) {
-            document.getElementById('navbar-deco').innerHTML = '<li class="nav-item"> <a class="nav-link active" aria-current="page" href="CreationCompte.html">Création Compte</a></li><li class="nav-item"><a class="nav-link active" aria-current="page" href="ConnexionCompte.html">Connexion</a></li>'
+            document.getElementById('navbar-co').innerHTML = '<a class="a-navLink" href="CreationCompte.html">Création Compte</a>'
+            document.getElementById('navbar-deco').innerHTML = '<a class="a-navLink" href="ConnexionCompte.html">Connexion</a>'
         } else {
-            document.getElementById('navbar-deco').innerHTML = '<li class="nav-item"> <a class="nav-link active" aria-current="page" onclick="navbarController.deconnexion()">Déconnexion</a></li><li class="nav-item"><a class="nav-link active" aria-current="page" href="InfoCompte.html">InfoCompte</a></li>'
+            document.getElementById('navbar-co').innerHTML = '<a class="a-navLink" aria-current="page" onclick="navbarController.deconnexion()">Déconnexion</a>'
+            document.getElementById('navbar-deco').innerHTML = '<a class="a-navLink" href="InfoCompte.html">InfoCompte</a>'
         }
     }
     deconnexion()
@@ -37,6 +52,7 @@ class NavbarController extends BaseController {
         sessionStorage.clear()
         document.location.href="../views/Accueil.html"
     }
+
 }
 
 export default NavbarController
